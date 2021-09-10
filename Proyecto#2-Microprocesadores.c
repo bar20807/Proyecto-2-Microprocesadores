@@ -27,7 +27,7 @@ long *factorial(long n){
 }
 
 //Definimos la misma función, pero utilizando argumentos genericos
-void *factorial_(void *args){
+void *pasar_factorial(void *args){
     long n = *((long*)args);
     return (void*)factorial(n);
 }
@@ -38,7 +38,7 @@ int main(int argc, char **argv)
     printf("Introduzca un numero entero positivo: ");
     scanf("%ld", &n);
     pthread_t thread[1];
-    pthread_create(&thread[0],NULL,factorial_,&n);
+    pthread_create(&thread[0],NULL,pasar_factorial,&n);
     pthread_join(thread[0],NULL);
 
     return 0;
