@@ -1,17 +1,8 @@
-/**
- * UNIVERSIDAD DEL VALLE DE GUATEMALA
- * CC3056 - Programacion de Microprocesadores
- * Auth: 	JJCelada
- * Date:	2020/08/26
- * Ver:		2.0 - 2021/08/22
- * 
- * naiveparallelPI.cpp
- * Calculo de PI sin protecciÃƒÂ³n a seccion critica
- */
+
  
 #include <iostream>
 #include <stdio.h>
-#include <cmath>		//pow
+#include <cmath>		
 #include <pthread.h>	
 
 using namespace std;
