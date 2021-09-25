@@ -1,4 +1,13 @@
-
+/*
+ * Proyecto 2 - Programación de microprocesadores
+ * Temario: Factorial de un número usando Threads
+ * Integrantes:
+    Rodrigo Barrera 
+    Jun Woo Lee
+    Roberto Vallecillos
+ * Versión del programa: #1.3
+ *
+*/
  
 #include <iostream>
 #include <stdio.h>
@@ -49,7 +58,7 @@ int main()
 }
 
 //------------
-// Serie para calculo de PI
+// Serie para calculo del factorial de un número
 //------------
 void *calc_Factorial(void *thread_rank)
 {
